@@ -52,6 +52,7 @@
                                     <outlet property="nameLabel" destination="D5I-P6-dI1" id="SFK-8g-utb"/>
                                     <outlet property="photoImageView" destination="ngo-1d-EWF" id="324-pb-zE9"/>
                                     <outlet property="ratingControl" destination="g7Q-Ms-Da9" id="auq-d1-DeT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="3dt-1w-ujP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -80,8 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="28F-Vv-JBr">
-                                <rect key="frame" x="20" y="76" width="374" height="468"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="28F-Vv-JBr">
+                                <rect key="frame" x="20" y="76" width="374" height="474"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-72-3wS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -98,8 +99,8 @@
                                             <outletCollection property="gestureRecognizers" destination="Dtx-3t-A0D" appends="YES" id="Qfp-x8-HTn"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q3G-Jk-ElM" customClass="RatingControl" customModule="UIKitAgain" customModuleProvider="target">
-                                        <rect key="frame" x="61" y="424" width="252" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q3G-Jk-ElM" customClass="RatingControl" customModule="UIKitAgain" customModuleProvider="target">
+                                        <rect key="frame" x="61" y="424" width="252" height="50"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starCount">
                                                 <integer key="value" value="5"/>
@@ -183,9 +184,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCk-Xt-MzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1033" y="-252"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZtT-4Z-ilo"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="ImageTest" width="540" height="540"/>
         <systemColor name="systemBackgroundColor">
